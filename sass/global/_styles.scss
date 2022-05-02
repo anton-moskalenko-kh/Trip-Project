@@ -1,0 +1,21 @@
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section{
+	@include box;
+}
+
+.layout {
+	@include box;
+	width: 1670px;
+	margin:0 auto;
+
+	@media (min-width: 1921px) {
+		width: 90%;
+	}
+	@media (max-width: 1919px) {
+		width: 96%;
+	}
+}

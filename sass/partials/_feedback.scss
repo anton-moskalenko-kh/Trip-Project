@@ -1,0 +1,197 @@
+.feedback {
+   @include box;
+   .feedback__row {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 830px);
+      padding: 160px 142px;
+      column-gap: 62px;
+      align-items: center;
+      @media (max-width: 1919px) {
+         grid-template-columns: 1fr minmax(650px, 1fr);
+         padding: 130px
+      }
+
+      @media (max-width: 1439px) {
+         grid-template-columns: 1fr;
+         justify-items: center;
+         padding: 100px;
+         row-gap: 50px;
+      }
+      
+      @media (max-width: 767px) {
+         padding: 100px 0;
+      }
+      
+      @media (min-width: 320px) and (max-width: 374px) {
+         padding: 50px 0;
+      }
+
+      .feedback__body {
+         position: relative;
+         .feedback_title {
+            @include font-title;
+            margin: 0 0 30px 0;
+            @media (max-width: 1919px) {
+               font-size: 38px;
+            }
+            
+            @media (max-width: 1439px) {
+               max-width: 600px;
+               text-align: center;
+            }
+            
+            @media (max-width: 767px) {
+               font-size: 32px;
+            }
+         }
+         .feedback_subtitle {
+            @include main-font;
+            margin: 0 0 50px 0;
+            @media (max-width: 1439px) {
+               max-width: 600px;
+               text-align: center;
+               margin: 0 0 30px 0;
+            }
+            
+            @media (max-width: 767px) {
+               font-size: 16px;
+            }
+         }
+         .feedback_btn {
+            display: block;
+            max-width: 270px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 76px;
+            text-align: center;
+            color: $color-button;
+            border: 2px solid $color-button;
+            border-radius: 38px;
+            @media (max-width: 767px) {
+               max-width: 250px;
+               font-size: 18px;
+            }
+            
+            @media (max-width: 1439px) {
+               margin: 0 auto;
+            }
+         }
+
+      }
+      .feedback__image {
+         position: relative;
+         @media (max-width: 767px) {
+            width: 100%;
+         }
+         .feedback__text {
+            position: absolute;
+            top: 38px;
+            left: 50px;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            @media (min-width: 375px) and (max-width: 767px) {
+               top: 15px;
+               left: 15px;
+               font-size: 20px;
+            }
+            
+            @media (min-width: 320px) and (max-width: 374px) {
+               top: 15px;
+               left: 15px;
+               font-size: 16px;
+            }
+         }
+         .feedback__name {
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #FFFFFF;
+            @media (min-width: 375px) and (max-width: 767px) {
+               top: 45px;
+               left: 15px;
+               font-size: 18px;
+            }
+            
+            @media (min-width: 320px) and (max-width: 374px) {
+               top: 40px;
+               left: 15px;
+               font-size: 16px;
+            }
+         }
+         .feedback__description {
+            position: absolute;
+            bottom: 45px;
+            left: 50px;
+            max-width: 346px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: #FFFFFF;
+            @media (min-width: 375px) and (max-width: 767px) {
+               bottom: 25px;
+               left: 15px;
+               font-size: 18px;
+               line-height: 25px;
+               max-width: 290px;
+            }
+            
+            @media (min-width: 320px) and (max-width: 374px) {
+               bottom: 15px;
+               left: 15px;
+               max-width: 150px;
+               font-size: 16px;
+               line-height: 20px;
+               max-width: 250px;
+            }
+         }
+         .feedback__arrow {
+            position: absolute;
+            bottom: 50px;
+            right: 70px;
+            @media (min-width: 375px) and (max-width: 767px) {
+               bottom: 25px;
+               right: 15px;
+            }
+            
+            @media (min-width: 320px) and (max-width: 374px) {
+               bottom: 15px;
+               right: 15px;
+               width: 30px;
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

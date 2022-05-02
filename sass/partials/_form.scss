@@ -1,0 +1,136 @@
+.form {
+   @include box;
+   background-image: url("../images/img-block3.png");
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   @media (max-width: 1919px) {
+      background-position: center;
+   }
+   @media (max-width: 1279px) {
+      background-position: right;
+   }
+   .form__row {
+      display: grid;
+      grid-template-columns: minmax(200px, 368px) minmax(200px, 288px);
+      justify-content: end;
+      margin: 88px 258px 120px 0;
+      @media (max-width: 1279px) {
+         justify-content: center;
+         margin: 88px 0 120px 0;
+      }
+
+      @media (max-width: 767px) {
+         grid-template-columns: 1fr;
+         margin: 60px 0 80px 0;
+      }
+
+      .form__text {
+         position: relative;
+         .form__title {
+            @include font-title;
+            margin: 0 0 30px 0;
+            @media (max-width: 767px) {
+               text-align: center;
+               font-size: 32px;
+               margin: 0 0 16px 0;
+            }
+         }
+         .form__subtitle {
+            @include main-font;
+            color: $font-color2;
+            max-width: 215px;
+            @media (max-width: 767px) {
+               text-align: center;
+               font-size: 16px;
+               margin: 0 auto 20px auto;
+            }
+         }
+      }
+   }
+   .form__form {
+      @media (max-width: 767px) {
+         max-width: 288px;
+         margin: 0 auto;
+      }
+      .form__name {
+         display: block;
+         width: 100%;
+         border: 3px solid #D0DCE3;
+         box-sizing: border-box;
+         border-radius: 38px;
+         font-family: 'Montserrat';
+         font-style: normal;
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 76px;
+         letter-spacing: 0.06em;
+         color: $font-color2;
+         padding-left: 32px;
+         margin: 0 0 15px 0;
+      }
+      .form__tel {
+         display: block;
+         width: 100%;
+         border: 3px solid #D0DCE3;
+         box-sizing: border-box;
+         border-radius: 38px;
+         @include main-font;
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 76px;
+         letter-spacing: 0.06em;
+         color: $font-color2;
+         padding-left: 32px;
+         margin: 0 0 30px 0;
+      }
+      .form__button {
+         display: block;
+         width: 100%;
+         background: $color-button;
+         border: 1px solid $color-button;
+         border-radius: 38px;
+         font-family: 'Montserrat';
+         font-style: normal;
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 76px;
+         color: #251404;
+         
+         &:hover {
+            background-color: #f5e194;
+         }
+      }
+      p {
+         @include main-font;
+         font-size: 11px;
+         line-height: 15px;
+         letter-spacing: 0.06em;
+         color: $font-color2;
+         text-align: center;
+         span {
+            color: #A37910;
+            font-weight: 600;
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
